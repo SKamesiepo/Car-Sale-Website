@@ -63,7 +63,7 @@ header {
 }
 
 .logo span {
-    color: var(--main-color);
+    color: var( --main-alternate-color);
 }
 
 .navbar {
@@ -78,7 +78,8 @@ header {
     font-weight: 500;
 }
 
-.navbar a:hover{
-    color: var( --main-alternate-color);
+.navbar a:hover,
+.navbar .active {
+    color: var(--main-alternate-color);
     border-bottom: 3px solid var( --main-alternate-color);
 }
