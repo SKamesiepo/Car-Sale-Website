@@ -19,6 +19,10 @@
     --bg-color: #fff;
 }
 
+section {
+    padding: 4rem 0 2rem;
+}
+
 img {
     width: 100%;
 }
@@ -82,4 +86,60 @@ header {
 .navbar .active {
     color: var(--main-alternate-color);
     border-bottom: 3px solid var( --main-alternate-color);
+}
+
+.home {
+    max-width: 2000px;
+    margin: auto;
+    width: 100%;
+    min-height: 640px;
+    display: flex;
+    align-items: center;
+    background: url(img/Background-home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+}
+
+.home-text {
+    padding-left: 130px;
+}
+
+.home-text h1 {
+    font-size: 2.4rem;
+}
+
+.home-text span {
+    color: var(--main-alternate-color);
+}
+
+.home-text p {
+    font-size: 0.938rem;
+    font-weight: 300;
+    margin: 0.5rem 0 1.2rem;
+}
+
+.btn {
+    padding: 10px 22px;
+    background: var(--main-alternate-color);
+    color: var(--bg-color);
+    font-weight: 400;
+}
+
+.btn:hover {
+    background: #fd052f;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading span {
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+.heading p {
+    font-size: 0.938rem;
+    font-weight: 300;
 }
