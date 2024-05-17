@@ -170,3 +170,19 @@ header {
     transform: scale(1.1);
     transition: 0.5s;
 }
+
+.cars-container .box h2 {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    font-weight: 400;
+    font-size: 0.8rem;
+    background: var(--bg-color);
+    padding: 8px;
+    border-radius: 0.5rem;
+}
+
+.cars-container .box:hover h2 {
+    background: var(--main-alternate-color);
+    color: var(--bg-color);
+}
