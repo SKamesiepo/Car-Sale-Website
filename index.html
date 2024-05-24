@@ -74,6 +74,15 @@
                 </div>
                 
             </div>
+
+                    <!-- Ad Banner Placement: Vertical Strip -->
+        <section class="ad-banner" id="vertical-strip-ad">
+            <a class="anchorElement" href="#" target="_blank">
+                <img class="advertIMG" src="" alt="Ad Banner">
+            </a>
+            <h3 class="headerText"></h3>
+        </section>
+
         </section>
 
         <section class="about container" id="about">
@@ -89,50 +98,12 @@
                 <a href="#" class="btn">Learn More</a>
             </div>
 
-            <div class="ad-banners-container">
-                <section class="ad-banner" id="light-square-ad">
-                    <a class="anchorElement" href="#" target="_blank">
-                        <img class="advertIMG" src="" alt="Ad Banner">
-                    </a>
-                    <h3 class="headerText"></h3>
-                </section>
-        
-                <section class="ad-banner" id="vertical-strip-ad">
-                    <a class="anchorElement" href="#" target="_blank">
-                        <img class="advertIMG" src="" alt="Ad Banner">
-                    </a>
-                    <h3 class="headerText"></h3>
-                </section>
-        
-                <section class="ad-banner" id="thick-vertical-ad">
-                    <a class="anchorElement" href="#" target="_blank">
-                        <img class="advertIMG" src="" alt="Ad Banner">
-                    </a>
-                    <h3 class="headerText"></h3>
-                </section>
-        
-                <section class="ad-banner" id="thick-horizontal-ad">
-                    <a class="anchorElement" href="#" target="_blank">
-                        <img class="advertIMG" src="" alt="Ad Banner">
-                    </a>
-                    <h3 class="headerText"></h3>
-                </section>
-        
-                <section class="ad-banner" id="horizontal-strip-ad">
-                    <a class="anchorElement" href="#" target="_blank">
-                        <img class="advertIMG" src="" alt="Ad Banner">
-                    </a>
-                    <h3 class="headerText"></h3>
-                </section>
-        
-                <section class="ad-banner" id="dark-square-ad">
-                    <a class="anchorElement" href="#" target="_blank">
-                        <img class="advertIMG" src="" alt="Ad Banner">
-                    </a>
-                    <h3 class="headerText"></h3>
-                </section>
-            </div>
-
+            <section class="ad-banner" id="horizontal-strip-ad">
+                <a class="anchorElement" href="#" target="_blank">
+                    <img class="advertIMG" src="" alt="Ad Banner">
+                </a>
+                <h3 class="headerText"></h3>
+            </section>
 
         </section>
 
@@ -189,13 +160,10 @@
                     <a href="#" class="details">View Item</a>
                 </div>
                 
-                <div class="box">
-                    <img src="img/part6.png" alt="">
-                    <h3>Tires</h3>
-                    <span>N$ 3,400.00</span>
-                    <i class='bx bxs-star'> (15 Reviews)</i>
-                    <a href="#" class="btn">Place Order</a>
-                    <a href="#" class="details">View Item</a>
+                <div class="box" id="light-square-ad">
+                    <a class="anchorElement" href="#" target="_blank">
+                        <img class="advertIMG" src="" alt="Ad Banner">
+                    </a>
                 </div>
                 
             </div>
@@ -317,10 +285,8 @@
         document.addEventListener("DOMContentLoaded", function() {
             fetchAd("Light Square", "light-square-ad");
             fetchAd("Vertical Strip", "vertical-strip-ad");
-            fetchAd("Thick Vertical", "thick-vertical-ad");
-            fetchAd("Thick Horizontal", "thick-horizontal-ad");
             fetchAd("Horizontal Strip", "horizontal-strip-ad");
-            fetchAd("Dark Square", "dark-square-ad");
+
         });
     </script>
 

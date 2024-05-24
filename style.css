@@ -552,4 +552,16 @@ header.shadow {
     }
 }
 
+#light-square-ad {
+    width: 300px; /* Adjust width as needed */
+    height: 300px; /* Adjust height as needed */
+    border: 1px solid #ddd; /* Optional: add a border */
+    padding: 10px; /* Optional: add padding */
+    text-align: center;
+    background-color: #f9f9f9; /* Optional: background color */
+}
 
+#light-square-ad img {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto;
+}
