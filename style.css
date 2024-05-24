@@ -584,3 +584,66 @@ header.shadow {
         grid-template-columns: 1fr; /* 1 per row on small screens */
     }
 }
+
+#horizontal-strip-ad{
+    padding-bottom: 40px;
+}
+
+.ad-details {
+    margin-top: 5px;
+    display: block; /* Ensure the link is displayed as a block element */
+    text-align: center; /* Center the text horizontally */
+}
+
+.home {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+    align-items: center; /* Center items along the cross axis */
+}
+
+.home-text {
+    flex: 1; /* Take up remaining space */
+}
+
+.ad-column {
+    flex: 0 0 auto; /* Do not grow or shrink; maintain initial size */
+}
+
+.home-text h1 {
+    font-size: 0.5 rem;
+    margin-left: -50px;
+}
+
+
+.home-text p {
+    font-size: 0.938rem;
+    font-weight: 300;
+    margin: 0.5rem 0 1.2rem;
+    margin-left: -50px;
+}
+
+.horizontal-strip-ad {
+    height: 850px;
+}
+
+.horizontal-ad-banner {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+    width: 100%;
+    max-width: 970px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+#vertical-strip-ad{
+border: 1px solid #ddd;
+text-align: center;
+background-color: #f9f9f9;
+width: 200px;
+height: 800px;
+position: relative;
+overflow: hidden;
+}

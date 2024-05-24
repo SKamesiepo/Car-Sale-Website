@@ -26,12 +26,23 @@
         </header>
 
         <section class="home" id="home">
+
+            <div class="ad-column vertical-strip">
+                <!-- Ad Banner Placement: Vertical Strip -->
+                <section class="ad-banner" id="vertical-strip-ad">
+                    <a class="anchorElement" href="#" target="_blank">
+                        <img class="advertIMG" src="" alt="Ad Banner">
+                    </a>
+                </section>
+            </div>
+
             <div class="home-text">
-                <h1>Welcome To <br>The Home of <span>Volkswagen</span> Cars</h1>
-                <p>Browse the below models of your choice, or check for parts</p>
+                <h1>Welcome To <br>The Home of <br> <span>Volkswagen</span> Cars</h1>
+                <p>Browse the below models of your choice</p>
 
                 <a href="#" class="btn">Find Your Dream Car</a>
             </div>
+
         </section>
 
         <section class="cars" id="cars">
@@ -73,15 +84,6 @@
                     <img src="img/car6.jpg" alt="">
                     <h2>Golf Polo Vivo - From N$ 262,700.00</h2>
                 </div>
-                <div class="ad-column">
-                    <!-- Ad Banner Placement: Vertical Strip -->
-                    <section class="ad-banner" id="vertical-strip-ad">
-                        <a class="anchorElement" href="#" target="_blank">
-                            <img class="advertIMG" src="" alt="Ad Banner">
-                        </a>
-                        <h3 class="headerText"></h3>
-                    </section>
-                </div>
             </div>
 
         </section>
@@ -103,7 +105,7 @@
                 <a class="anchorElement" href="#" target="_blank">
                     <img class="advertIMG" src="" alt="Ad Banner">
                 </a>
-                <h3 class="headerText"></h3>
+                <p class="ad-details">Horizontal Strip Advert by Ad.Simaneka</a>
             </section>
 
         </section>
@@ -164,7 +166,7 @@
                 <div class="box" id="light-square-ad">
                     <a class="anchorElement" href="#" target="_blank">
                         <img class="advertIMG" src="" alt="Ad Banner">
-                        <p class="ad-details">Sponsored Advert by Ad.Simaneka</a>
+                        <p class="ad-details">Light Square Advert by Ad.Simaneka</a>
                     </a>
                 </div>
                 
@@ -258,7 +260,7 @@
         function fetchAd(type, containerId) {
             var formdata = new FormData();
             formdata.append("type", type);
-            formdata.append("tags", "VW, Volkswagen,music,party");
+            formdata.append("tags", "VW, Volkswagen,music,party, ps5,stereo,headphones");
 
             var ajax = new XMLHttpRequest();
             ajax.addEventListener("load", function(event) {
