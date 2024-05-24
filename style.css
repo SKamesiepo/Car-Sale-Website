@@ -516,3 +516,40 @@ header.shadow {
 }
 
 
+.ad-banners-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Adjust the gap between items as needed */
+    padding: 20px; /* Optional: add some padding around the container */
+}
+
+.ad-banner {
+    border: 1px solid #ddd; /* Optional: add a border to each ad banner */
+    padding: 10px; /* Optional: add some padding inside each ad banner */
+    text-align: center;
+    background-color: #f9f9f9; /* Optional: background color */
+}
+
+.ad-banner img {
+    max-width: 100%; /* Ensure the images are responsive */
+    height: auto;
+}
+
+.ad-banner h3 {
+    margin-top: 10px; /* Space between the image and the header text */
+}
+
+/* Responsive Design: Stack the ad banners on smaller screens */
+@media (max-width: 768px) {
+    .ad-banners-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .ad-banners-container {
+        grid-template-columns: 1fr; /* 1 per row on small screens */
+    }
+}
+
+
