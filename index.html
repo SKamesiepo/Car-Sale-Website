@@ -88,9 +88,12 @@
 
                 <a href="#" class="btn">Learn More</a>
 
-                <!-- ASD Ad Server iFrame Tag - Generated with Revive Adserver v5.5.2 -->
-<!-- ASD Ad Server iFrame Tag - Generated with Revive Adserver v5.5.2 -->
-<iframe id='a3fb5215' name='a3fb5215' src='http://40.127.14.230/revive-adserver-5.5.2/www/delivery/afr.php?zoneid=2&amp;cb=INSERT_RANDOM_NUMBER_HERE' frameborder='0' scrolling='no' width='582' height='427' allow='autoplay'><a href='http://40.127.14.230/revive-adserver-5.5.2/www/delivery/ck.php?n=a6a5087d&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://40.127.14.230/revive-adserver-5.5.2/www/delivery/avw.php?zoneid=2&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a6a5087d' border='0' alt='' /></a></iframe>
+                <section class="ad-banner">
+                    <a class="anchorElement" href="#" target="_blank">
+                        <img class="advertIMG" src="" alt="Ad Banner">
+                    </a>
+                    <h3 class="headerText"></h3>
+                </section>
 
             </div>
         </section>
@@ -242,6 +245,32 @@
         </div>
 
         <script src="main.js"></script>
+
+        <script>
+            var formdata = new FormData();
+            formdata.append("type", "Light Square");
+            formdata.append("tags", "music,party");
+    
+            var ajax = new XMLHttpRequest();
+            ajax.addEventListener("load", completeHandler, false);
+    
+            ajax.open("POST", "https://ad.simaneka.com/api/get");
+            ajax.setRequestHeader("authorisation", "tD6zol5egVkfh9Wab7Z9rtOGm9uc2IgJ");
+    
+            ajax.send(formdata);
+    
+            function completeHandler(event) {
+                var response = JSON.parse(event.target.responseText);
+    
+                console.log(response);
+                document.querySelector('.advertIMG').src = response.link;
+                document.querySelector('.advertIMG').alt = response.alt;
+                document.querySelector('.anchorElement').href = response.href;
+                document.querySelector('.headerText').innerHTML = response.message;
+            }
+        </script>
+
+
     </body>
 
 </html>
